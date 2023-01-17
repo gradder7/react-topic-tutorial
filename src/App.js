@@ -66,7 +66,7 @@ class App extends React.Component {
             //we cannot directly mutate or change the state varaibles
             // this.state.count++;
 
-            //we will use the special Method called set state
+            //we will use the special Method called set state 
             //set state is a funtion to which you pass an object
             //in object you can only pass those properties you want to change
             this.setState({

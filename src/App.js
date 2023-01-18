@@ -66,18 +66,33 @@ class App extends React.Component {
             //we cannot directly mutate or change the state varaibles
             // this.state.count++;
 
-            //we will use the special Method called set state 
-            //set state is a funtion to which you pass an object
-            //in object you can only pass those properties you want to change
-            this.setState({
-              count: this.state.count + 1,
-            });
+            if (this.state.count < 15) {
+              //we will use the special Method called set state
+              //set state is a funtion to which you pass an object
+              //in object you can only pass those properties you want to change
+              this.setState({
+                count: this.state.count + 1,
+              });
+            }
 
             // console.log(count);
+            //only react can call this render function
             // this.render();
           }}
         >
           Increament count
+        </button>
+        <button
+          onClick={(e) => {
+            //e is a syntetic event
+            if (this.state.count > 0) {
+              this.setState({
+                count: this.state.count - 1,
+              });
+            }
+          }}
+        >
+          Decreament count
         </button>
       </div>
     );

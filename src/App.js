@@ -1,27 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
 //in normal javascript
 // const divele = document.createElement("div");
 // divele.innerText = "this is div";
@@ -37,6 +13,9 @@
 // }
 // export default App;
 import React from "react";
+//this is avaible for only this component and its children
+//this can also be used by previous generation also due to bundelling
+import "./App.css";
 class App extends React.Component {
   constructor() {
     //always use super to impliment functions of component class
@@ -46,6 +25,7 @@ class App extends React.Component {
     this.state = {
       //all thge varaibles
       count: 0,
+      name: "Himanshu",
     };
   }
   //class weill always have a render function
@@ -55,6 +35,7 @@ class App extends React.Component {
     //return what ever you want so on the screen
     return (
       <div>
+        <h1 className="something">Welcome {this.state.name}</h1>
         <h1>Counter Application</h1>
         <h2>{this.state.count}</h2>
         <button

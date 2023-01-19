@@ -16,6 +16,8 @@ import React from "react";
 //this is avaible for only this component and its children
 //this can also be used by previous generation also due to bundelling
 import "./App.css";
+import Color from "./color";
+import Timer from "./timer";
 class App extends React.Component {
   constructor() {
     //always use super to impliment functions of component class
@@ -30,6 +32,13 @@ class App extends React.Component {
       setColor: "",
     };
   }
+
+  // we can pass function to a props also
+  changeSelectedColor = (newcolor) => {
+    this.setState({
+      setColor: newcolor,
+    });
+  };
   //class weill always have a render function
   render() {
     const color = ["red", "blue", "green", "brown", "yellow"];
@@ -105,20 +114,22 @@ class App extends React.Component {
             }}
           >
             {color.map((itemColor) => {
+              {
+                /* passing function to props */
+              }
+              {
+                /* when you are psssing function as a prop pass it as a reference */
+              }
               return (
-                <div
-                  className="color"
-                  style={{ backgroundColor: itemColor, cursor: "pointer" }}
-                  onClick={() => {
-                    this.setState({
-                      setColor: itemColor,
-                    });
-                  }}
-                ></div>
+                <Color
+                  itemColor={itemColor}
+                  changeColor={this.changeSelectedColor}
+                />
               );
             })}
           </div>
         </div>
+        <Timer />
       </>
     );
   }

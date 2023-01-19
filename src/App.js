@@ -108,7 +108,7 @@ class App extends React.Component {
               return (
                 <div
                   className="color"
-                  style={{ backgroundColor: itemColor }}
+                  style={{ backgroundColor: itemColor, cursor: "pointer" }}
                   onClick={() => {
                     this.setState({
                       setColor: itemColor,

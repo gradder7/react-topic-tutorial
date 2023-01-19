@@ -26,6 +26,7 @@ class App extends React.Component {
       //all thge varaibles
       count: 0,
       name: "Himanshu",
+      products: ["shoes", "pants", "Tshirts"],
     };
   }
   //class weill always have a render function
@@ -34,7 +35,7 @@ class App extends React.Component {
     //in render we will wirte the js
     //return what ever you want so on the screen
     return (
-      <div>
+      <>
         <h1 className="something">Welcome {this.state.name}</h1>
         <h1>Counter Application</h1>
         <h2>{this.state.count}</h2>
@@ -75,7 +76,18 @@ class App extends React.Component {
         >
           Decreament count
         </button>
-      </div>
+
+        {/* How to render List */}
+        <h1 className="something">How to render List</h1>
+        <ul>
+          {/* we cannot write the for, forof,forin,while,dowhile loop in jsx */}
+          {this.state.products.map((item) => {
+            return <li>{item}</li>;
+          })}
+        </ul>
+
+        {/* paint app=> when we click on color it changes bg wrt to colr we click */}
+      </>
     );
   }
 }

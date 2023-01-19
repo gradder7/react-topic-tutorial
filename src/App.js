@@ -27,10 +27,12 @@ class App extends React.Component {
       count: 0,
       name: "Himanshu",
       products: ["shoes", "pants", "Tshirts"],
+      setColor: "",
     };
   }
   //class weill always have a render function
   render() {
+    const color = ["red", "blue", "green", "brown", "yellow"];
     // let count = 0;
     //in render we will wirte the js
     //return what ever you want so on the screen
@@ -87,6 +89,36 @@ class App extends React.Component {
         </ul>
 
         {/* paint app=> when we click on color it changes bg wrt to colr we click */}
+        {/* when we see {{}} 1 for js and other for object */}
+        <h1 className="something" style={{ textAlign: "center" }}>
+          Paint App
+        </h1>
+        <div style={{ backgroundColor: this.state.setColor }}>
+          <div
+            className="color-container"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              border: "1px solid black",
+              height: "200px",
+            }}
+          >
+            {color.map((itemColor) => {
+              return (
+                <div
+                  className="color"
+                  style={{ backgroundColor: itemColor }}
+                  onClick={() => {
+                    this.setState({
+                      setColor: itemColor,
+                    });
+                  }}
+                ></div>
+              );
+            })}
+          </div>
+        </div>
       </>
     );
   }

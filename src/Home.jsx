@@ -28,7 +28,7 @@ function Home() {
           to="/useEffectHooknew"
           style={{ textDecoration: "none", color: "orange" }}
         >
-          <p style={{ display: "inline" }}>UseEffectHoook()</p>
+          <p style={{ display: "inline" }}>UseEffectHoookNew()</p>
         </Link>
       </div>
     </div>

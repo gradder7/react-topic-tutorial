@@ -13,7 +13,7 @@ function ChildForUseEffect() {
     //componentWill unmount we retun
     return () => {
       console.log("component is uunmounted");
-      clearInterval();
+      clearInterval(interval);
     };
   }, [time]);
   //when empty than run on every time the state changes or the component rerenders

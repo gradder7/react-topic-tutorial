@@ -5,9 +5,13 @@ import Home from "./Home";
 import UseStateHook from "./tutorialReact/Hooks/UseStateHook";
 import UseEffectHook from "./tutorialReact/Hooks/useEffectHook/UseEffectHook";
 import UseEffectHooksNew from "./tutorialReact/Hooks/useEffectHook/UseEffectHooksNew";
+import UseRef from "./tutorialReact/Hooks/UseRef";
+import AllComponentContext from "./tutorialReact/Hooks/Context/AllComponentContext";
+
 
 export default function App() {
   return (
+    
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,6 +19,8 @@ export default function App() {
         <Route path="/useStateHook" element={<UseStateHook />} />
         <Route path="/useEffectHook" element={<UseEffectHook />} />
         <Route path="/useEffectHooknew" element={<UseEffectHooksNew />} />
+        <Route path="/useRef" element={<UseRef />} />
+        <Route path="/context" element={<AllComponentContext/>} />
       </Routes>
     </Router>
   );

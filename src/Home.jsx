@@ -30,6 +30,20 @@ function Home() {
         >
           <p style={{ display: "inline" }}>UseEffectHoookNew()</p>
         </Link>
+        <br />
+        <Link
+          to="/useRef"
+          style={{ textDecoration: "none", color: "orange" }}
+        >
+          <p style={{ display: "inline" }}>UseRefs()</p>
+        </Link>
+        <br />
+        <Link
+          to="/context"
+          style={{ textDecoration: "none", color: "orange" }}
+        >
+          <p style={{ display: "inline" }}>Context</p>
+        </Link>
       </div>
     </div>
   );

@@ -28,7 +28,7 @@ function Home() {
           to="/useEffectHooknew"
           style={{ textDecoration: "none", color: "orange" }}
         >
-          <p style={{ display: "inline" }}>UseEffectHoookNew()</p>
+          <p style={{ display: "inline" }}>UseEffectHoook() another Example</p>
         </Link>
         <br />
         <Link
@@ -43,6 +43,13 @@ function Home() {
           style={{ textDecoration: "none", color: "orange" }}
         >
           <p style={{ display: "inline" }}>Context</p>
+        </Link>
+        <br />
+        <Link
+          to="/useReducer"
+          style={{ textDecoration: "none", color: "orange" }}
+        >
+          <p style={{ display: "inline" }}>UseReducer()</p>
         </Link>
       </div>
     </div>

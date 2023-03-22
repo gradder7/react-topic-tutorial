@@ -7,6 +7,7 @@ import UseEffectHook from "./tutorialReact/Hooks/useEffectHook/UseEffectHook";
 import UseEffectHooksNew from "./tutorialReact/Hooks/useEffectHook/UseEffectHooksNew";
 import UseRef from "./tutorialReact/Hooks/UseRef";
 import AllComponentContext from "./tutorialReact/Hooks/Context/AllComponentContext";
+import UseReducer from "./tutorialReact/Hooks/UseReducer";
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/useEffectHooknew" element={<UseEffectHooksNew />} />
         <Route path="/useRef" element={<UseRef />} />
         <Route path="/context" element={<AllComponentContext/>} />
+        <Route path="/useReducer" element={<UseReducer/>} />
       </Routes>
     </Router>
   );

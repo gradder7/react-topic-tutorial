@@ -31,17 +31,11 @@ function Home() {
           <p style={{ display: "inline" }}>UseEffectHoook() another Example</p>
         </Link>
         <br />
-        <Link
-          to="/useRef"
-          style={{ textDecoration: "none", color: "orange" }}
-        >
+        <Link to="/useRef" style={{ textDecoration: "none", color: "orange" }}>
           <p style={{ display: "inline" }}>UseRefs()</p>
         </Link>
         <br />
-        <Link
-          to="/context"
-          style={{ textDecoration: "none", color: "orange" }}
-        >
+        <Link to="/context" style={{ textDecoration: "none", color: "orange" }}>
           <p style={{ display: "inline" }}>Context</p>
         </Link>
         <br />
@@ -50,6 +44,24 @@ function Home() {
           style={{ textDecoration: "none", color: "orange" }}
         >
           <p style={{ display: "inline" }}>UseReducer()</p>
+        </Link>
+        <br />
+        <Link to="/useMemo" style={{ textDecoration: "none", color: "orange" }}>
+          <p style={{ display: "inline" }}>UseMemo() with Function</p>
+        </Link>
+        <br />
+        <Link
+          to="/useMemoComponent"
+          style={{ textDecoration: "none", color: "orange" }}
+        >
+          <p style={{ display: "inline" }}>UseMemo() with Component</p>
+        </Link>
+        <br />
+        <Link
+          to="/useCallback"
+          style={{ textDecoration: "none", color: "orange" }}
+        >
+          <p style={{ display: "inline" }}>useCallback()</p>
         </Link>
       </div>
     </div>

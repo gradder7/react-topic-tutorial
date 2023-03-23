@@ -8,11 +8,12 @@ import UseEffectHooksNew from "./tutorialReact/Hooks/useEffectHook/UseEffectHook
 import UseRef from "./tutorialReact/Hooks/UseRef";
 import AllComponentContext from "./tutorialReact/Hooks/Context/AllComponentContext";
 import UseReducer from "./tutorialReact/Hooks/UseReducer";
-
+import UseMemo from "./tutorialReact/Hooks/useMemo/UseMemo";
+import UseMemoComponent from "./tutorialReact/Hooks/useMemo/UseMemocomponent/UseMemoComponent";
+import UseCallback from "./tutorialReact/Hooks/useCallback/UseCallback";
 
 export default function App() {
   return (
-    
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,8 +22,11 @@ export default function App() {
         <Route path="/useEffectHook" element={<UseEffectHook />} />
         <Route path="/useEffectHooknew" element={<UseEffectHooksNew />} />
         <Route path="/useRef" element={<UseRef />} />
-        <Route path="/context" element={<AllComponentContext/>} />
-        <Route path="/useReducer" element={<UseReducer/>} />
+        <Route path="/context" element={<AllComponentContext />} />
+        <Route path="/useReducer" element={<UseReducer />} />
+        <Route path="/useMemo" element={<UseMemo />} />
+        <Route path="/useMemoComponent" element={<UseMemoComponent />} />
+        <Route path="/useCallback" element={<UseCallback />} />
       </Routes>
     </Router>
   );

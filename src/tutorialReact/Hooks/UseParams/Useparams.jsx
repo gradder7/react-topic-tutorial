@@ -6,7 +6,6 @@ import { useParams } from "react-router-dom";
 //  of the dynamic params from the current URL that were matched by the <Route path>.
 //  Child routes inherit all params from their parent routes.
 
-//
 function Useparams() {
   //it will return me an object
   //we can do calls through this params we want from api etc.

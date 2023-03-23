@@ -1,6 +1,6 @@
 import React from "react";
 import Portals from "./tutorialReact/Portals";
-import { BrowserRouter as Router, Routes, Rout, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import UseStateHook from "./tutorialReact/Hooks/UseStateHook";
 import UseEffectHook from "./tutorialReact/Hooks/useEffectHook/UseEffectHook";
@@ -12,6 +12,13 @@ import UseMemo from "./tutorialReact/Hooks/useMemo/UseMemo";
 import UseMemoComponent from "./tutorialReact/Hooks/useMemo/UseMemocomponent/UseMemoComponent";
 import UseCallback from "./tutorialReact/Hooks/useCallback/UseCallback";
 import Useparams from "./tutorialReact/Hooks/UseParams/Useparams";
+import UseNavigate from "./tutorialReact/Hooks/useNavigate/UseNavigate";
+import NavigateComp from "./tutorialReact/Hooks/NavigateComp";
+import NestedRouting from "./tutorialReact/Nested Routing/NestedRouting";
+import HomeNested from "./tutorialReact/Nested Routing/components/HomeNested";
+import ContactUs from "./tutorialReact/Nested Routing/components/ContactUs";
+import AboutUsNested from "./tutorialReact/Nested Routing/components/AboutUsNested";
+import UseHistory from "./tutorialReact/Hooks/UseHistory/UseHistory";
 
 export default function App() {
   return (
@@ -30,6 +37,13 @@ export default function App() {
         <Route path="/useCallback" element={<UseCallback />} />
         {/* here i pass the dynamic path */}
         <Route path="/useParams/:id/:name" element={<Useparams />} />
+        <Route path="/useNavigate" element={<UseNavigate />} />
+        <Route path="/navigate" element={<NavigateComp />} />
+        <Route path="/nestedRouting/" element={<NestedRouting />}>
+          <Route path="homeNested" element={<HomeNested />} />
+          <Route path="contactNested" element={<ContactUs />} />
+          <Route path="aboutNested" element={<AboutUsNested />} />
+        </Route>
       </Routes>
     </Router>
   );

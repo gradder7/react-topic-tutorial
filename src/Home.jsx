@@ -70,6 +70,28 @@ function Home() {
         >
           <p style={{ display: "inline" }}>useParams()</p>
         </Link>
+        <br />
+        <Link
+          to="/useNavigate"
+          style={{ textDecoration: "none", color: "orange" }}
+        >
+          <p style={{ display: "inline" }}>useNavigate()</p>
+        </Link>
+        <br />
+        <Link
+          to="/navigate"
+          style={{ textDecoration: "none", color: "orange" }}
+        >
+          <p style={{ display: "inline" }}>Navigate</p>
+        </Link>
+        <br />
+        <Link
+          to="/nestedRouting"
+          style={{ textDecoration: "none", color: "orange" }}
+        >
+          <p style={{ display: "inline" }}>Nested Routing</p>
+        </Link>
+        <br />
       </div>
     </div>
   );

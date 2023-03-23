@@ -11,6 +11,7 @@ import UseReducer from "./tutorialReact/Hooks/UseReducer";
 import UseMemo from "./tutorialReact/Hooks/useMemo/UseMemo";
 import UseMemoComponent from "./tutorialReact/Hooks/useMemo/UseMemocomponent/UseMemoComponent";
 import UseCallback from "./tutorialReact/Hooks/useCallback/UseCallback";
+import Useparams from "./tutorialReact/Hooks/UseParams/Useparams";
 
 export default function App() {
   return (
@@ -27,6 +28,8 @@ export default function App() {
         <Route path="/useMemo" element={<UseMemo />} />
         <Route path="/useMemoComponent" element={<UseMemoComponent />} />
         <Route path="/useCallback" element={<UseCallback />} />
+        {/* here i pass the dynamic path */}
+        <Route path="/useParams/:id/:name" element={<Useparams />} />
       </Routes>
     </Router>
   );

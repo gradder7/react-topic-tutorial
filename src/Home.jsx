@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Home() {
   return (
@@ -62,6 +62,13 @@ function Home() {
           style={{ textDecoration: "none", color: "orange" }}
         >
           <p style={{ display: "inline" }}>useCallback()</p>
+        </Link>
+        <br />
+        <Link
+          to="/useParams"
+          style={{ textDecoration: "none", color: "orange" }}
+        >
+          <p style={{ display: "inline" }}>useParams()</p>
         </Link>
       </div>
     </div>

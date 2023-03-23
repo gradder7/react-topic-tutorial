@@ -92,6 +92,13 @@ function Home() {
           <p style={{ display: "inline" }}>Nested Routing</p>
         </Link>
         <br />
+        <Link
+          to="/customehook"
+          style={{ textDecoration: "none", color: "orange" }}
+        >
+          <p style={{ display: "inline" }}>Custome Hook Examples</p>
+        </Link>
+        <br />
       </div>
     </div>
   );

@@ -18,7 +18,8 @@ import NestedRouting from "./tutorialReact/Nested Routing/NestedRouting";
 import HomeNested from "./tutorialReact/Nested Routing/components/HomeNested";
 import ContactUs from "./tutorialReact/Nested Routing/components/ContactUs";
 import AboutUsNested from "./tutorialReact/Nested Routing/components/AboutUsNested";
-import UseHistory from "./tutorialReact/Hooks/UseHistory/UseHistory";
+import CustomeHookExamples from "./tutorialReact/Hooks/CustomeHooks/CustomeHookExamples";
+import Counter from "./tutorialReact/Hooks/CustomeHooks/counterCustomehook/Counter";
 
 export default function App() {
   return (
@@ -44,6 +45,8 @@ export default function App() {
           <Route path="contactNested" element={<ContactUs />} />
           <Route path="aboutNested" element={<AboutUsNested />} />
         </Route>
+        <Route path="/customeHook" element={<CustomeHookExamples />}></Route>
+          <Route path="/counter" element={<Counter />} />
       </Routes>
     </Router>
   );

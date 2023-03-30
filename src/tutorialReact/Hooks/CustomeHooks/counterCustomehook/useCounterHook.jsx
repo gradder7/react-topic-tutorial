@@ -10,6 +10,5 @@ export default function useCounterHook(initialValue){
     const reset=()=>{
         setValue(initialValue);
     }
-
     return [value,increment,decrement,reset];
 }

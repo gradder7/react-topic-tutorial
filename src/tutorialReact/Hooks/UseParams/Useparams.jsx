@@ -16,6 +16,7 @@ function Useparams() {
     <div>
       <h1>hi iam params</h1>
       <h1>{param.name}</h1>
+      <h1>{param.id}</h1>
     </div>
   );
 }
